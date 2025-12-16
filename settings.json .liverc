@@ -1,0 +1,7 @@
+{
+  "port": 5500,
+  "host": "127.0.0.1",
+  "cors": true,
+  "open": false,
+  "csp": "default-src 'self'; script-src 'self' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data:"
+}

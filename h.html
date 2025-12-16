@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Prototype</title>
+  <link rel="stylesheet" href="c.css" />
+</head>
+<body>
+  <div class="window-shell">
+    <img class="window-chrome" src="wb.png" alt="App chrome" />
+    <div class="tab-bar" role="tablist">
+      <button type="button" class="tab tab-home tab-active" data-tab="home" data-locked="true" aria-selected="true" aria-label="Home workspace">
+        <img src="assets/home-icon.svg" alt="" />
+      </button>
+      <button type="button" class="tab tab-file" data-tab="case.xyz" aria-selected="false">
+        <span class="tab-title">case.xyz</span>
+        <span class="tab-close" role="button" tabindex="0" aria-label="Close tab">
+          <img src="assets/tab-close.svg" alt="" />
+        </span>
+      </button>
+      <button type="button" class="tab tab-file" data-tab="case2.xyz" aria-selected="false">
+        <span class="tab-title">case2.xyz</span>
+        <span class="tab-close" role="button" tabindex="0" aria-label="Close tab">
+          <img src="assets/tab-close.svg" alt="" />
+        </span>
+      </button>
+      <button type="button" class="tab tab-file" data-tab="case3.xyz" aria-selected="false">
+        <span class="tab-title">case3.xyz</span>
+        <span class="tab-close" role="button" tabindex="0" aria-label="Close tab">
+          <img src="assets/tab-close.svg" alt="" />
+        </span>
+      </button>
+    </div>
+  <div class="canvas-area">
+    <div id="stage">
+      <div id="picker-backdrop" class="picker-backdrop" hidden></div>
+      <div id="node-picker" class="node-picker" hidden>
+        <img class="picker-corner tl" src="assets/UpLeftBoy.svg" alt="" />
+        <img class="picker-corner tr" src="assets/UpRightBoy.svg" alt="" />
+        <img class="picker-corner br" src="assets/BottomRightBoy.svg" alt="" />
+        <img class="picker-corner bl" src="assets/BottomLeftBoy.svg" alt="" />
+        <button class="picker-close" aria-label="Close picker">
+          <img src="assets/node-close.svg" alt="" />
+        </button>
+        <div class="picker-tabs">
+          <button class="picker-tab active">Query Filters</button>
+          <button class="picker-tab">Hard Filters</button>
+          <button class="picker-tab">Exporters</button>
+          <button class="picker-tab">Customized</button>
+          <button class="picker-tab">Setups</button>
+        </div>
+        <div class="picker-body"></div>
+      </div>
+      <div id="viewport">
+        <div id="nodes" class="nodes-layer"></div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <button id="mode-toggle" class="mode-toggle" aria-label="Toggle light mode">☀︎</button>
+  <button id="browser-folder-btn" class="browser-folder-btn" type="button">Choose Folder</button>
+  <input id="browser-folder-input" type="file" webkitdirectory multiple hidden />
+  <script src="assets/libs/flubber.min.js"></script>
+  <script src="f.js"></script>
+</body>
+</html>
